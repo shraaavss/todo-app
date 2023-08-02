@@ -1,10 +1,12 @@
 import React from "react";
 import "./cssFiles/Todo.css";
 
-export default function Todo({ task }) {
+export default function Todo({ task, toggleComplt }) {
+
   return (
     <div className="Todo">
-      <p className={`${task.completed ? "completed" : ""}`}>{task.task}</p>
+      <p onClick={() => toggleComplt(task.id)}
+      className={`${task.completed ? "completed" : ""}`}>{task.task}</p>
 
       <div>
         <span className="material-symbols-outlined">edit_note</span>

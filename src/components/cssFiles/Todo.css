@@ -4,4 +4,9 @@
     align-items: center;
     justify-content: space-between;
     max-width: 350px;
+    cursor: pointer;
+}
+
+.completed{
+    color: brown;
 }
