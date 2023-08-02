@@ -1,7 +1,7 @@
 import React from "react";
 import "./cssFiles/Todo.css";
 
-export default function Todo({ task, toggleComplt }) {
+export default function Todo({ task, toggleComplt, delTodo }) {
 
   return (
     <div className="Todo">
@@ -10,7 +10,8 @@ export default function Todo({ task, toggleComplt }) {
 
       <div>
         <span className="material-symbols-outlined">edit_note</span>
-        <span className="material-symbols-outlined">delete</span>
+        <span onClick={() => delTodo(task.id)}
+        className="material-symbols-outlined">delete</span>
       </div>
     </div>
   );

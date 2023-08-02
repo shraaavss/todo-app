@@ -23,11 +23,17 @@ export default function TodoWrapper() {
                 { ...todo, completed: !todo.completed } : todo))
     }
 
+    const delTodo = id => {
+        setTodos(todos.filter(todo => todo.id !== id))
+    }
+
     return (
         <div className="todo-wrapper">
             <TodoForm addTodo={addTodo} />
             {todos.map((todo) => (
-                <Todo key={todo.id} task={todo} toggleComplt={toggleComplt} />
+                <Todo key={todo.id} task={todo} 
+                toggleComplt={toggleComplt} 
+                delTodo={delTodo}/>
             ))}
         </div>
     );
