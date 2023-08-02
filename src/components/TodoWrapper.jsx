@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import TodoForm from "./TodoForm";
 import Todo from "./Todo";
 import EditTodoForm from "./EditTodoForm";
+import './cssFiles/TodoWrapper.css'
 
 export default function TodoWrapper() {
     const [todos, setTodos] = useState([]);
@@ -41,6 +42,7 @@ export default function TodoWrapper() {
 
     return (
         <div className="todo-wrapper">
+            <h1>Let's Get Things Done!</h1>
             <TodoForm addTodo={addTodo} />
             {todos.map((todo) => (
                 todo.isEditing ? (

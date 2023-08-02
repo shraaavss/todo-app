@@ -1,0 +1,14 @@
+.todo-wrapper{
+    /* background-color: #4e3c83; */
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #4e3c83;
+    opacity: 1;
+    background-image:  radial-gradient(#ffffff 0.8px, transparent 0.8px), radial-gradient(#ffffff 0.8px, #4e3c83 0.8px);
+    background-size: 32px 32px;
+    background-position: 0 0,16px 16px;
+}
