@@ -1,5 +1,4 @@
 .todo-wrapper{
-    /* background-color: #4e3c83; */
     padding: 25px;
     border-radius: 12px;
     display: flex;
@@ -17,4 +16,16 @@
     color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     padding-bottom: 3%;
+}
+
+.delAll{
+    cursor: pointer;
+    justify-self: end;
+    align-self: flex-end;
+    font-size: 10px;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: #e9a6c2;
+    outline: none;
+
 }

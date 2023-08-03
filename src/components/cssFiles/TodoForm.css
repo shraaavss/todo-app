@@ -19,9 +19,9 @@ input::placeholder {
     text-align: left;
 }
 
-button{
+.todo-btn{
     font-size: 15px;
-    left: -10px;
+    /* left: -10px; */
     padding: 3%;
     border-radius: 0 25px 25px 0;
     position: relative;
