@@ -1,11 +1,20 @@
 import React, { useState } from "react";
+import "./cssFiles/TodoForm.css";
 
 export default function TodoForm({ addTodo }) {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addTodo(value);
+
+    // Trim the input value to remove leading/trailing spaces
+    const trimmedValue = value.trim();
+
+    // Check if the input is not empty
+    if (trimmedValue !== "") {
+      addTodo(trimmedValue);
+    }
+
     setValue("");
   };
 
