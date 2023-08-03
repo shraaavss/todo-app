@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+input {
+    font-size: 15px;
+    padding: 3%;
+    border-radius: 25px 0 0 25px;
+    border: none;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 15px;
+    text-align: left;
+}
+
+button{
+    font-size: 15px;
+    left: -10px;
+    padding: 3%;
+    border-radius: 0 25px 25px 0;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #e9a6c2;
+    transition: all 0.3s ease 0s;
+
+    display: flex;
+    flex-direction: row;
+}

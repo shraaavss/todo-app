@@ -12,3 +12,9 @@
     background-size: 32px 32px;
     background-position: 0 0,16px 16px;
 }
+
+.todo-wrapper h1{
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    padding-bottom: 3%;
+}

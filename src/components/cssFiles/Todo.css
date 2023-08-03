@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 350px;
+    max-width: 95%;
     cursor: pointer;
     padding-block: 10px;
     padding-inline: 5px;
@@ -12,10 +12,12 @@
     background-color: #f9c6db;
 }
 
-.Todo p{
-    font-size: 20px;
+.completed{
+    text-decoration:line-through;
+    background-color: #916376;
+
 }
 
-.completed{
-    color: brown;
+.Todo p{
+    font-size: 17px;
 }
