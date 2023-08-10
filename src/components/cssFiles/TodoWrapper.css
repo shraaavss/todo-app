@@ -27,5 +27,10 @@
     border-radius: 25px;
     background-color: #e9a6c2;
     outline: none;
+    transition: all 0.3s ease 0s;
 
+}
+
+.delAll:hover{
+    text-decoration: underline;
 }

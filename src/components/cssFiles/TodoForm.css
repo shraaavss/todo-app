@@ -21,7 +21,6 @@ input::placeholder {
 
 .todo-btn{
     font-size: 15px;
-    /* left: -10px; */
     padding: 3%;
     border-radius: 0 25px 25px 0;
     position: relative;
@@ -33,4 +32,8 @@ input::placeholder {
 
     display: flex;
     flex-direction: row;
+}
+
+.todo-btn:hover{
+    text-decoration: underline;
 }
